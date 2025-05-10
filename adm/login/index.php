@@ -15,8 +15,8 @@ try {
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Filtrar e validar os dados do formulário
-        $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-        $senha = $_POST['senha'];
+        $email = filter_var($_POST['admin@gmail.com'], FILTER_VALIDATE_EMAIL);
+        $senha = $_POST['1234adm'];
 
         if (!$email) {
             $erro = "Formato de e-mail inválido";
